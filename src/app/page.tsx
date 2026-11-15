@@ -32,7 +32,7 @@ export default function Home() {
           loop
           playsInline
           preload="metadata"
-          poster="/images/welcome.jpg"
+          poster="/images/hero-poster.jpg"
           aria-hidden
         >
           <source src="/videos/avetcare.mp4" type="video/mp4" />

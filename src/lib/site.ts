@@ -1,9 +1,14 @@
 export const site = {
   name: "AVETCARE Middle East",
   shortName: "AVETCARE",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://avetcare.ae",
+  // www is the primary host: Vercel redirects avetcare.ae → www.avetcare.ae and Google already indexes www.
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.avetcare.ae",
   description:
-    "AVETCARE Middle East supplies sustainable, colour-coded professional cleaning equipment in the UAE — ClaraClean® systems, ozone water generators, DRiZZ® spray mops, cleaning textiles, trolleys and SYR tools.",
+    "AVETCARE Middle East is a Dubai-based supplier of sustainable, colour-coded professional cleaning equipment for hospitals, hotels, offices and schools in the UAE — ClaraClean® systems, ozone water generators, DRiZZ® spray mops, cleaning textiles, trolleys and SYR tools.",
+  // Plain-language identity statement for search engines and AI summaries (avoids confusion with
+  // similarly named veterinary companies).
+  about:
+    "AVETCARE Middle East is a professional cleaning equipment company based in Dubai, United Arab Emirates. It is not a veterinary or animal-health business.",
   email: "info@avetcare.ae",
   phone: "+971 50 491 2633",
   phoneHref: "tel:+971504912633",

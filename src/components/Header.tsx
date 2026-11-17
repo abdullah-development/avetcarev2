@@ -171,13 +171,6 @@ export default function Header() {
             >
               AVETCARE
             </span>
-            <span
-              className={`mt-1 text-[0.6rem] font-semibold tracking-[0.32em] uppercase transition-colors ${
-                solid ? "text-leaf-600" : "text-lime-300"
-              }`}
-            >
-              Middle East
-            </span>
           </span>
         </Link>
 
@@ -214,15 +207,6 @@ export default function Header() {
         </NavigationMenu>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href={site.phoneHref}
-            className={`group/phone flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold transition duration-300 ${
-              solid ? "text-ink-700 hover:bg-sand-100 hover:text-leaf-600" : "text-white hover:bg-white/10 hover:text-lime-300"
-            }`}
-          >
-            <Phone aria-hidden className="size-4 transition duration-300 group-hover/phone:rotate-12" />
-            {site.phone}
-          </a>
           <Link href="/contact" className="btn-primary !py-2.5">
             Get a quote
           </Link>
@@ -247,7 +231,6 @@ export default function Header() {
                   <Image src="/images/leaf.png" alt="" width={36} height={36} className="h-9 w-9" />
                   <span className="flex flex-col leading-none">
                     <span className="font-sans text-lg font-extrabold tracking-[0.14em] text-ink-900">AVETCARE</span>
-                    <span className="mt-1 text-[0.55rem] font-semibold tracking-[0.32em] text-leaf-600 uppercase">Middle East</span>
                   </span>
                 </Link>
               </DrawerTitle>

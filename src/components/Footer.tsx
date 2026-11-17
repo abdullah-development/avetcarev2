@@ -13,7 +13,6 @@ export default function Footer() {
             <Image src="/images/leaf.png" alt="" width={56} height={56} className="h-12 w-12 transition duration-500 group-hover:-rotate-12 group-hover:scale-110" />
             <span className="flex flex-col leading-none">
               <span className="text-2xl font-extrabold tracking-[0.14em] text-white transition group-hover:text-lime-300">AVETCARE</span>
-              <span className="mt-1 text-[0.6rem] font-semibold tracking-[0.32em] text-lime-300 uppercase">Middle East</span>
             </span>
           </Link>
           <p className="mt-6 max-w-sm leading-relaxed">

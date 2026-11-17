@@ -14,10 +14,8 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: "2011", label: "Serving the UAE since" },
   { value: "90%", label: "Less water with ClaraClean®" },
   { value: "80%", label: "Fewer cleaning chemicals" },
-  { value: "6", label: "Industries served" },
 ];
 
 export default function Home() {
@@ -41,15 +39,15 @@ export default function Home() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-forest-950/80 to-transparent" />
 
         <div className="container-x pt-28 pb-10 sm:pb-16 lg:pb-32">
-          <p className="eyebrow !text-lime-300">Cleaning & hygiene solutions · UAE</p>
+          <p className="eyebrow !text-lime-300">Cleaning & hygiene solutions</p>
           <h1 className="mt-5 max-w-4xl text-[2.6rem] leading-[1.04] font-medium !text-white sm:mt-6 sm:text-7xl lg:text-8xl">
-            Cleaner spaces.
+            Clean by design
             <br />
-            <em className="font-light text-lime-300 italic">Greener</em> future.
+            <em className="font-light text-lime-300 italic">Green future</em>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:mt-8 sm:text-xl">
             European-made, colour-coded cleaning systems that cut water and chemicals — trusted by hospitals, hotels,
-            offices and schools across the Emirates.
+            offices and schools across the globe.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4">
             <Link href="/products" className="btn-primary">
@@ -63,9 +61,9 @@ export default function Home() {
 
         <div className="w-full lg:absolute lg:inset-x-0 lg:bottom-0">
           <div className="container-x">
-            <dl className="grid grid-cols-2 border-t border-white/15 md:grid-cols-4">
+            <dl className="grid grid-cols-2 border-t border-white/15 text-center">
               {stats.map((s) => (
-                <div key={s.label} className="py-4 pr-4 sm:py-6">
+                <div key={s.label} className="px-2 py-4 sm:py-6">
                   <dt className="text-xs text-white/60 sm:text-sm">{s.label}</dt>
                   <dd className="font-display text-2xl text-white sm:text-4xl">{s.value}</dd>
                 </div>

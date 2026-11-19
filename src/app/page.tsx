@@ -243,7 +243,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* QUALITY + VIDEO */}
+      {/* QUALITY */}
       <section className="container-x grid items-center gap-14 py-24 lg:grid-cols-2 lg:py-32">
         <div>
           <SectionHeading
@@ -257,15 +257,8 @@ export default function Home() {
           </Reveal>
         </div>
         <Reveal delay={150}>
-          <div className="relative aspect-video overflow-hidden rounded-[2rem] bg-forest-900 shadow-2xl shadow-forest-900/20">
-            <iframe
-              className="absolute inset-0 h-full w-full"
-              src="https://www.youtube-nocookie.com/embed/2pUF_beGJcY?rel=0"
-              title="AVETCARE cleaning solutions video"
-              loading="lazy"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+          <div className="relative aspect-[3/2] overflow-hidden rounded-[2rem] bg-forest-900 shadow-2xl shadow-forest-900/20">
+            <Image quality={85} src="/images/quality.jpg" alt="Certified quality and safety" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
           </div>
         </Reveal>
       </section>

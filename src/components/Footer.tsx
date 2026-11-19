@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CurrentYear from "@/components/CurrentYear";
 import { areas, products } from "@/lib/content";
 import { nav, site } from "@/lib/site";
 
@@ -75,7 +76,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col items-center justify-between gap-4 py-6 text-sm sm:flex-row">
-          <p>© {site.name}. All rights reserved.</p>
+          <p>© <CurrentYear /> {site.name}. All rights reserved.</p>
           <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             {nav.slice(1).map((n) => (
               <li key={n.href}>
